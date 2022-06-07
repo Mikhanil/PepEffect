@@ -3,7 +3,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace Postproccess
 {
-    public class CustomPostProcess : ScriptableRendererFeature
+    public sealed class CustomPostProcess : ScriptableRendererFeature
     {
         [SerializeField] private UniversalRendererData rendererData;
         [SerializeField] private RenderPassEvent renderStage = RenderPassEvent.AfterRenderingTransparents;

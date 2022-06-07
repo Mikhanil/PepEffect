@@ -4,7 +4,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace Postproccess
 {
-    internal class CustomPostProcessPass : ScriptableRenderPass
+    internal sealed class CustomPostProcessPass : ScriptableRenderPass
     {
         private readonly UniversalRendererData rendererData;
         private RTHandle renderResult;
